@@ -20,7 +20,7 @@ public class ModelliCategorie {
 	public void setModelli(Modelli modelli) {
 		this.modelli=modelli;
 	}
-	
+	/*
 	@ManyToOne
     @JoinColumn(name = "fk_Categoria", referencedColumnName = "idCategorie")
 	@JsonIgnoreProperties("Categorie")
@@ -32,5 +32,5 @@ public class ModelliCategorie {
 	}
 	public void setCategorie(Categorie categorie) {
 		this.categorie=categorie;
-	}
+	}*/
 }

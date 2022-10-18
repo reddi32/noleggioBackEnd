@@ -1,13 +1,17 @@
 package com.example.noleggio.model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
-import org.springframework.data.annotation.Id;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -15,7 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Modelli {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idModello")
+	@Column(name = "id_modello")
 	private Integer idModello;
 	@Column(name = "classeEmissioni")
 	private String classeEmissioni;
@@ -80,11 +84,21 @@ public class Modelli {
 	public void setColore(String colore) {
 		this.colore = colore;
 	}
+	/*
+	@OneToMany( mappedBy = "Automobile")
+	@JsonIgnoreProperties("Automobile")
+	private List<Automobile> automobile;
 	
+	public List<Automobile> getAutomobile() {
+		return automobile;
+	}
+	public void setAutomobile(List<Automobile> automobile) {
+		this.automobile=automobile;
+	}
 
-	@ManyToOne
+	/*@ManyToOne
     @JoinColumn(name = "fk_Marca", referencedColumnName = "idMarca")
-	@JsonIgnoreProperties("Marca")
+	@JsonIgnoreProperties("Marche")
 	
 	private Marche marche;
 	
@@ -93,5 +107,5 @@ public class Modelli {
 	}
 	public void setMarche(Marche marche) {
 		this.marche=marche;
-	}
+	}*/
 }

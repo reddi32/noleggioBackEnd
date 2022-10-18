@@ -1,9 +1,9 @@
 package com.example.noleggio.repo;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.noleggio.model.Modelli;
 
-public interface ModelliRepository extends CrudRepository<Modelli, Integer>{
+public interface ModelliRepository extends JpaRepository<Modelli, Integer>{
 
 }

@@ -65,9 +65,9 @@ public class Guidatori {
 	public void setValida(Boolean valida) {
 		this.valida = valida;
 	}
-
+/*
 	@ManyToOne
-    @JoinColumn(name = "fk_Utente", referencedColumnName = "idUtente")
+    @JoinColumn(name = "fk_Utente", referencedColumnName = "id_Utente")
 	@JsonIgnoreProperties("Utenti")
 	
 	private Utenti utenti;
@@ -77,5 +77,5 @@ public class Guidatori {
 	}
 	public void setUtenti(Utenti utenti) {
 		this.utenti=utenti;
-	}
+	}*/
 }

@@ -12,8 +12,8 @@ import javax.persistence.Id;
 public class Utenti {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
-  @Column(name = "idUtente")
-  private Integer idUtente;
+  @Column(name = "id_utente")
+  private Long idUtente;
   @Column(name = "nome")
   private String nome;
   @Column(name = "cognome")
@@ -22,21 +22,21 @@ public class Utenti {
   private String email;
   @Column(name = "password")
   private String password;
-  @Column(name = "dataDiNascita")
+  @Column(name = "data_di_nascita")
   private Date dataDiNascita;
-  @Column(name = "paeseDiNascita")
+  @Column(name = "paese_di_nascita")
   private String paeseDiNascita;
   @Column(name = "azienda")
   private Integer azienda;
-  @Column(name = "codiceFiscale")
+  @Column(name = "codice_fiscale")
   private String codiceFiscale;
   
 
-  public Integer getIdUtente() {
+  public Long getIdUtente() {
     return idUtente;
   }
 
-  public void setIdUtente(Integer idUtente) {
+  public void setIdUtente(Long idUtente) {
     this.idUtente = idUtente;
   }
 
@@ -103,4 +103,5 @@ public String getCodiceFiscale() {
 public void setCodiceFiscale(String codiceFiscale) {
 	this.codiceFiscale = codiceFiscale;
 }
+
 }

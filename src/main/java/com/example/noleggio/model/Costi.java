@@ -39,7 +39,7 @@ public class Costi {
 	public void setPrezzo(Float prezzo) {
 		this.prezzo = prezzo;
 	}
-	
+	/*
 	@ManyToOne
     @JoinColumn(name = "fk_Modello", referencedColumnName = "idModello")
 	@JsonIgnoreProperties("Modelli")
@@ -51,5 +51,5 @@ public class Costi {
 	}
 	public void setModelli(Modelli modelli) {
 		this.modelli=modelli;
-	}
+	}*/
 }

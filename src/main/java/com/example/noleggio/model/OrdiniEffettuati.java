@@ -6,11 +6,10 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-
-import org.springframework.data.annotation.Id;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -64,7 +63,7 @@ public class OrdiniEffettuati {
 	public void setRiepilogo(String riepilogo) {
 		this.riepilogo = riepilogo;
 	}
-	
+	/*
 	@ManyToOne
     @JoinColumn(name = "fk_id_utente", referencedColumnName = "id_utente")
     @JsonIgnoreProperties("ordineEffettuato")
@@ -90,5 +89,5 @@ public class OrdiniEffettuati {
 	public void setUtentiInvitati(List<UtenteRegistrato> utentiRegistrati) {
 		this.utentiRegistrati=utentiRegistrati;
 	}
-
+*/
 }

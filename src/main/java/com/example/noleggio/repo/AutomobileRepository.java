@@ -1,10 +1,10 @@
 package com.example.noleggio.repo;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.example.noleggio.model.Automobile;
 
 
-public interface AutomobileRepository extends CrudRepository<Automobile, Integer> {
+public interface AutomobileRepository extends JpaRepository<Automobile, Integer> {
 
 }

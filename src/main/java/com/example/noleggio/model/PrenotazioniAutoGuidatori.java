@@ -6,7 +6,7 @@ import javax.persistence.ManyToOne;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 public class PrenotazioniAutoGuidatori {
-
+/*
 	@ManyToOne
     @JoinColumn(name = "fk_PrenotazioniAutoGuidatori", referencedColumnName = "idPrenotazioneAuto")
 	@JsonIgnoreProperties("PrenotazioniAuto")
@@ -31,5 +31,5 @@ public class PrenotazioniAutoGuidatori {
 	}
 	public void setGuidatori(Guidatori guidatori) {
 		this.guidatori=guidatori;
-	}
+	}*/
 }

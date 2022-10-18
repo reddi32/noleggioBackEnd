@@ -6,10 +6,11 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
-import org.springframework.data.annotation.Id;
+
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -58,7 +59,7 @@ public class PrenotazioniAuto {
 	public void setFinePrenotazione(Date finePrenotazione) {
 		this.finePrenotazione = finePrenotazione;
 	}
-	
+	/*
 	@ManyToOne
     @JoinColumn(name = "fk_PrenotazioneAuto", referencedColumnName = "idAuto")
 	@JsonIgnoreProperties("Automobile")
@@ -83,5 +84,5 @@ public class PrenotazioniAuto {
 	}
 	public void setOrdiniEffettuati(OrdiniEffettuati ordiniEffettuati) {
 		this.ordiniEffettuati=ordiniEffettuati;
-	}
+	}*/
 }
