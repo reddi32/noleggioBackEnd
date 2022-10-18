@@ -1,11 +1,8 @@
-package com.example.accessingdatamysql;
-
-import java.util.Optional;
+package com.example.noleggio.repo;
 
 import org.springframework.data.repository.CrudRepository;
 
-// This will be AUTO IMPLEMENTED by Spring into a Bean called userRepository
-// CRUD refers Create, Read, Update, Delete
+import com.example.noleggio.model.utenti;
 
 public interface UtentiRepository extends CrudRepository<utenti, Integer> {
 	

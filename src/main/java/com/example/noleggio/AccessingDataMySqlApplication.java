@@ -1,11 +1,11 @@
-package com.example.accessingdatamysql;
+package com.example.noleggio;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AccessingDataMysqlApplication {
+public class AccessingDataMySqlApplication {
 	public static void main(String[] args) {
-	    SpringApplication.run(AccessingDataMysqlApplication.class, args);
+	    SpringApplication.run(AccessingDataMySqlApplication.class, args);
 	}
 }

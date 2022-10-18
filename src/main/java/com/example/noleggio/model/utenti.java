@@ -1,4 +1,4 @@
-package com.example.accessingdatamysql;
+package com.example.noleggio.model;
 
 import java.util.Date;
 
