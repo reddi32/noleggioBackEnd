@@ -1,11 +1,11 @@
 package com.example.noleggio.model;
 
-public class utentiLogin {
+public class UtentiLogin {
 	private String email;
 	private String password;
 	
-	public utentiLogin() {}
-	public utentiLogin(String email, String password) {
+	public UtentiLogin() {}
+	public UtentiLogin(String email, String password) {
 		this.email=email;
 		this.password=password;
 	}

@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import org.springframework.data.annotation.Id;
 
 @Entity
-public class automobile {
+public class Automobile {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer idAuto;

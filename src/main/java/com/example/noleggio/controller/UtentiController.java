@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.example.noleggio.model.utenti;
+import com.example.noleggio.model.Utenti;
 import com.example.noleggio.repo.UtentiRepository;
 
 @Controller // This means that this class is a Controller
@@ -25,7 +25,7 @@ public class UtentiController {
 private UtentiRepository utentiRepository;
 	 @CrossOrigin(origins = "http://localhost:4200")
 	 @PostMapping(path="/add") // Map ONLY POST Requests
-	  public String addNewUser (@RequestBody utenti nome) {
+	  public String addNewUser (@RequestBody Utenti nome) {
 	    // @ResponseBody means the returned String is the response, not a view name
 	    // @RequestParam means it is a parameter from the GET or POST request
 		// utenti n = new utenti();
@@ -43,7 +43,7 @@ private UtentiRepository utentiRepository;
 		}
 	 @CrossOrigin(origins = "*")
 	 @GetMapping(path="/all")
-	  public @ResponseBody Iterable<utenti>/*Optional<utenti>*/ getUtenti(/*@RequestParam Integer idUtente @RequestParam String nome*/) {
+	  public @ResponseBody Iterable<Utenti>/*Optional<utenti>*/ getUtenti(/*@RequestParam Integer idUtente @RequestParam String nome*/) {
 	    // This returns a JSON or XML with the users
 		  return utentiRepository.findAll()
 ;	    //return utentiRepository.findById(idUtente);
