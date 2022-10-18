@@ -22,7 +22,7 @@ public class ModelliCategorie {
 	}
 	/*
 	@ManyToOne
-    @JoinColumn(name = "fk_Categoria", referencedColumnName = "idCategorie")
+    @JoinColumn(name = "fk_Categoria", referencedColumnName = "id_categorie")
 	@JsonIgnoreProperties("Categorie")
 	
 	private Categorie categorie;

@@ -67,7 +67,7 @@ public class Guidatori {
 	}
 /*
 	@ManyToOne
-    @JoinColumn(name = "fk_Utente", referencedColumnName = "id_Utente")
+    @JoinColumn(name = "fk_Utente", referencedColumnName = "id_utente")
 	@JsonIgnoreProperties("Utenti")
 	
 	private Utenti utenti;

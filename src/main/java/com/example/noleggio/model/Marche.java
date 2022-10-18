@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Marche {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idMarca")
+	@Column(name = "id_marca")
 	private Integer idMarca;
 	@Column(name = "nome")
 	private String nome;

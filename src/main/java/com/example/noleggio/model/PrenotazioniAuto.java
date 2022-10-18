@@ -61,7 +61,7 @@ public class PrenotazioniAuto {
 	}
 	/*
 	@ManyToOne
-    @JoinColumn(name = "fk_PrenotazioneAuto", referencedColumnName = "idAuto")
+    @JoinColumn(name = "fk_PrenotazioneAuto", referencedColumnName = "id_auto")
 	@JsonIgnoreProperties("Automobile")
 	
 	private Automobile automobile;
@@ -74,7 +74,7 @@ public class PrenotazioniAuto {
 	}
 	
 	@ManyToOne
-    @JoinColumn(name = "fk_PrenotazioneAuto_1", referencedColumnName = "idOrdineEffettuato")
+    @JoinColumn(name = "fk_PrenotazioneAuto_1", referencedColumnName = "id_ordine_effettuato")
 	@JsonIgnoreProperties("OrdiniEffettuati")
 	
 	private OrdiniEffettuati ordiniEffettuati;

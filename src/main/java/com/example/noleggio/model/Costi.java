@@ -41,12 +41,12 @@ public class Costi {
 	}
 	/*
 	@ManyToOne
-    @JoinColumn(name = "fk_Modello", referencedColumnName = "idModello")
+    @JoinColumn(name = "fk_Modello", referencedColumnName = "id_modello")
 	@JsonIgnoreProperties("Modelli")
 	
 	private Modelli modelli;
 	
-	public Modelli getmodelli() {
+	public Modelli getModelli() {
 		return modelli;
 	}
 	public void setModelli(Modelli modelli) {

@@ -96,8 +96,8 @@ public class Modelli {
 		this.automobile=automobile;
 	}
 
-	/*@ManyToOne
-    @JoinColumn(name = "fk_Marca", referencedColumnName = "idMarca")
+	@ManyToOne
+    @JoinColumn(name = "fk_Marca", referencedColumnName = "id_marca")
 	@JsonIgnoreProperties("Marche")
 	
 	private Marche marche;

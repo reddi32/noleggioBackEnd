@@ -78,15 +78,15 @@ public class OrdiniEffettuati {
 		this.utenti=utenti;
 	}
 	
-	@OneToMany( mappedBy = "ordineEffettuato" )
-    @JsonIgnoreProperties("ordineEffettuato")
+	@OneToMany( mappedBy = "ordine_effettuato" )
+    @JsonIgnoreProperties("OrdineEffettuato")
 	
 	private List<UtenteRegistrato> utentiRegistrati;
 		
-	public List<UtenteRegistrato> getUtentiInvitati() {
+	public List<UtenteRegistrato> getUtentiRegistrati() {
 		return utentiRegistrati;
 	}
-	public void setUtentiInvitati(List<UtenteRegistrato> utentiRegistrati) {
+	public void setUtentiRegistrati(List<UtenteRegistrato> utentiRegistrati) {
 		this.utentiRegistrati=utentiRegistrati;
 	}
 */
