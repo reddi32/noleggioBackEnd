@@ -2,6 +2,7 @@ package com.example.noleggio.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -11,15 +12,23 @@ import javax.persistence.Id;
 public class Utenti {
   @Id
   @GeneratedValue(strategy=GenerationType.AUTO)
+  @Column(name = "idUtente")
   private Integer idUtente;
+  @Column(name = "nome")
   private String nome;
+  @Column(name = "cognome")
   private String cognome;
+  @Column(name = "email")
   private String email;
+  @Column(name = "password")
   private String password;
+  @Column(name = "dataDiNascita")
   private Date dataDiNascita;
+  @Column(name = "paeseDiNascita")
   private String paeseDiNascita;
-  private String partitaIva;
+  @Column(name = "azienda")
   private Integer azienda;
+  @Column(name = "codiceFiscale")
   private String codiceFiscale;
   
 
@@ -77,14 +86,6 @@ public String getPaeseDiNascita() {
 
 public void setPaeseDiNascita(String paeseDiNascita) {
 	this.paeseDiNascita = paeseDiNascita;
-}
-
-public String getPartitaIva() {
-	return partitaIva;
-}
-
-public void setPartitaIva(String partitaIva) {
-	this.partitaIva = partitaIva;
 }
 
 public Integer getAzienda() {

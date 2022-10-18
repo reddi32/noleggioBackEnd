@@ -1,5 +1,6 @@
 package com.example.noleggio.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,7 +10,9 @@ import javax.persistence.Id;
 public class Categorie {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name = "idCategorie")
 	private Integer idCategorie;
+	@Column(name = "nome")
 	private String nome;
 	
 	public Integer getIdCategorie() {

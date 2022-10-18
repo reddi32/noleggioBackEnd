@@ -2,20 +2,31 @@ package com.example.noleggio.model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
 public class Guidatori {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name = "idGuidatori")
 	private Integer idGuidatori;
+	@Column(name = "nome")
 	private String nome;
+	@Column(name = "cognome")
 	private String cognome;
+	@Column(name = "codicePatente")
 	private String codicePatente;
+	@Column(name = "dataDiScadenza")
 	private Date dataDiScadenza;
+	@Column(name = "valida")
 	private Boolean valida;
 	
 	public Integer getIdGuidatori() {
@@ -55,4 +66,16 @@ public class Guidatori {
 		this.valida = valida;
 	}
 
+	@ManyToOne
+    @JoinColumn(name = "fk_Utente", referencedColumnName = "idUtente")
+	@JsonIgnoreProperties("Utenti")
+	
+	private Utenti utenti;
+	
+	public Utenti getUtenti() {
+		return utenti;
+	}
+	public void setUtenti(Utenti utenti) {
+		this.utenti=utenti;
+	}
 }

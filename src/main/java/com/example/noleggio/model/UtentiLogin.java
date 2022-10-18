@@ -1,7 +1,19 @@
 package com.example.noleggio.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+
+import org.springframework.data.annotation.Id;
+
+@Entity
 public class UtentiLogin {
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	@Column(name = "email")
 	private String email;
+	@Column(name = "password")
 	private String password;
 	
 	public UtentiLogin() {}
