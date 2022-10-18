@@ -3,14 +3,21 @@ package com.example.noleggio.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import org.springframework.data.annotation.Id;
+
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+@Entity
 public class OrdiniEffettuati {
-	
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer idOrdineEffettuato;
 	private LocalDateTime dataPrenotazione;
 	private LocalDateTime dataInizio;
@@ -75,13 +82,13 @@ public class OrdiniEffettuati {
 	@OneToMany( mappedBy = "ordineEffettuato" )
     @JsonIgnoreProperties("ordineEffettuato")
 	
-	private List<UtenteRegistrato> utentiInvitati;
+	private List<UtenteRegistrato> utentiRegistrati;
 		
 	public List<UtenteRegistrato> getUtentiInvitati() {
-		return utentiInvitati;
+		return utentiRegistrati;
 	}
-	public void setUtentiInvitati(List<UtenteInvitato> utentiInvitati) {
-		this.utentiInvitati=utentiInvitati;
+	public void setUtentiInvitati(List<UtenteRegistrato> utentiRegistrati) {
+		this.utentiRegistrati=utentiRegistrati;
 	}
 
 }
