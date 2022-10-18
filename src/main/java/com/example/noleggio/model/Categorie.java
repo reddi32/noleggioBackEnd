@@ -10,7 +10,7 @@ import javax.persistence.Id;
 public class Categorie {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idCategorie")
+	@Column(name = "id_categorie")
 	private Integer idCategorie;
 	@Column(name = "nome")
 	private String nome;

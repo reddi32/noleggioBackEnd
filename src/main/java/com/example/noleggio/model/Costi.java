@@ -14,9 +14,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Costi {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idCosto")
+	@Column(name = "id_costo")
 	private Integer idCosto;
-	@Column(name = "tiplogiaPrezzo")
+	@Column(name = "tiplogia_prezzo")
 	private String tipologiaPrezzo; //settimanale, mensile, annuale
 	@Column(name = "prezzo")
 	private Float prezzo;

@@ -18,15 +18,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class PrenotazioniAuto {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idPrenotazioneAuto")
+	@Column(name = "id_prenotazione_auto")
 	private Integer idPrenotazioneAuto;
-	@Column(name = "nomeGuidatore")
+	@Column(name = "nome_guidatore")
 	private String nomeGuidatore;
-	@Column(name = "numeroTarga")
+	@Column(name = "numero_targa")
 	private String numeroTarga;
-	@Column(name = "inizioPrenotazione")
+	@Column(name = "inizio_prenotazione")
 	private Date inizioPrenotazione;
-	@Column(name = "finePrenotazione")
+	@Column(name = "fine_prenotazione")
 	private Date finePrenotazione;
 	
 	public Integer getIdPrenotazioneAuto() {

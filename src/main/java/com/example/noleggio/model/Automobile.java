@@ -17,9 +17,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Automobile {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idAuto")
+	@Column(name = "id_auto")
 	private Integer idAuto;
-	@Column(name = "annoDiImmatricolazione")
+	@Column(name = "anno_di_immatricolazione")
 	private Integer annoDiImmatricolazione;
 	@Column(name = "chilometraggio")
 	private Float chilometraggio;

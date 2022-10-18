@@ -16,15 +16,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Guidatori {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column(name = "idGuidatori")
+	@Column(name = "id_guidatori")
 	private Integer idGuidatori;
 	@Column(name = "nome")
 	private String nome;
 	@Column(name = "cognome")
 	private String cognome;
-	@Column(name = "codicePatente")
+	@Column(name = "codice_patente")
 	private String codicePatente;
-	@Column(name = "dataDiScadenza")
+	@Column(name = "data_di_scadenza")
 	private Date dataDiScadenza;
 	@Column(name = "valida")
 	private Boolean valida;
