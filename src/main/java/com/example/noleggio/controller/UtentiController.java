@@ -1,5 +1,7 @@
 package com.example.noleggio.controller;
 
+import java.util.Optional;
+
 //import java.util.Optional;
 
 
@@ -10,8 +12,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-//import org.springframework.web.bind.annotation.RequestParam;
-//import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestParam;
+
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example.noleggio.model.Utenti;
@@ -45,8 +47,15 @@ private UtentiRepository utentiRepository;
 	 @GetMapping(path="/all")
 	  public @ResponseBody Iterable<Utenti>/*Optional<utenti>*/ getUtenti(/*@RequestParam Integer idUtente @RequestParam String nome*/) {
 	    // This returns a JSON or XML with the users
-		  return utentiRepository.findAll()
-;	    //return utentiRepository.findById(idUtente);
+		return utentiRepository.findAll();
+		//return utentiRepository.findById(idUtente);
 	    //return utentiRepository.findByNome(nome);
+	  }
+	 @CrossOrigin(origins = "*")
+	 @GetMapping(path="/nome")
+	  public @ResponseBody Optional<Utenti> getUtenti(@RequestParam String nome) {
+	    // This returns a JSON or XML with the users
+	    //return utentiRepository.findById(idUtente);
+	    return utentiRepository.findByNome(nome);
 	  }
 }
